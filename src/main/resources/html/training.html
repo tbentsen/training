@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="trainingApp">
+<head>
+	<title>My training App</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-resource.min.js"></script>
+	<script type="text/javascript" src="js/training.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+<body>
+
+	<div ng-controller="TrainingController" class="container">
+		<form ng-submit="insertTrainingSession()">
+		<label>Training session</label>
+		<div class="form-group">		
+		<label>Sport</label> 
+		<select ng-model="trainingSession.trainingCategory"	ng-options="type.name for type in types | orderBy: 'name'" class="form-control"></select>
+		</div>
+		<div class="form-group">
+		<label>Date</label> 
+		<input type="text" ng-model="trainingSession.start" ng-required="true"  class="form-control"/> 
+		</div>
+		<div class="form-group">
+		<label>Duration</label> 
+		<input type="text" ng-model="session.duration" ng-required="true" />
+		</div>
+		<div class="form-group">		
+		<label>User</label>
+		<input type="text" ng-model="trainingSession.user" ng-required="true"  class="form-control"/>
+		</div>
+		<div class="form-group">
+			<input type="submit" value="register training session" class="btn btn-default btn-lg"/> 
+		</div>
+		</form>
+		<pre>{{trainingSession | json}}</pre>
+	</div>
+</body>
+</html>

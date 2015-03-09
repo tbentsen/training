@@ -1,0 +1,165 @@
+INFO  [2015-02-22 09:10:10,733] io.dropwizard.assets.AssetsBundle: Registering AssetBundle with name: assets for path /*
+INFO  [2015-02-22 09:10:10,827] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2015-02-22 09:10:10,918] org.eclipse.jetty.setuid.SetUIDListener: Opened hello-world@183b677d{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 09:10:10,922] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-02-22 09:10:11,044] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-02-22 09:10:11,119] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /training (com.tbentsen.training.resources.TrainingResource)
+
+INFO  [2015-02-22 09:10:11,378] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1e2b6f78{/,null,AVAILABLE}
+INFO  [2015-02-22 09:10:11,382] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-02-22 09:10:11,382] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-02-22 09:10:11,387] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7a092a9c{/admin,null,AVAILABLE}
+INFO  [2015-02-22 09:10:11,397] org.eclipse.jetty.server.ServerConnector: Started hello-world@183b677d{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 09:13:22,954] org.eclipse.jetty.server.ServerConnector: Stopped hello-world@183b677d{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 09:13:22,955] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7a092a9c{/admin,null,UNAVAILABLE}
+INFO  [2015-02-22 09:13:22,955] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1e2b6f78{/,null,UNAVAILABLE}
+INFO  [2015-02-22 09:13:30,725] io.dropwizard.assets.AssetsBundle: Registering AssetBundle with name: assets for path /*
+INFO  [2015-02-22 09:13:30,810] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2015-02-22 09:13:30,889] org.eclipse.jetty.setuid.SetUIDListener: Opened hello-world@6a3e1661{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 09:13:30,892] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-02-22 09:13:30,995] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-02-22 09:13:31,068] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /service/training (com.tbentsen.training.resources.TrainingResource)
+
+INFO  [2015-02-22 09:13:31,315] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@334adb85{/,null,AVAILABLE}
+INFO  [2015-02-22 09:13:31,319] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-02-22 09:13:31,319] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-02-22 09:13:31,324] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@78f26675{/admin,null,AVAILABLE}
+INFO  [2015-02-22 09:13:31,330] org.eclipse.jetty.server.ServerConnector: Started hello-world@6a3e1661{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 09:35:13,951] org.eclipse.jetty.server.ServerConnector: Stopped hello-world@6a3e1661{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 09:35:13,952] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@78f26675{/admin,null,UNAVAILABLE}
+INFO  [2015-02-22 09:35:13,953] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@334adb85{/,null,UNAVAILABLE}
+INFO  [2015-02-22 10:19:44,346] io.dropwizard.assets.AssetsBundle: Registering AssetBundle with name: assets for path /*
+INFO  [2015-02-22 10:19:44,443] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2015-02-22 10:19:44,533] org.eclipse.jetty.setuid.SetUIDListener: Opened hello-world@1ab1f43b{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 10:19:44,536] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-02-22 10:19:44,666] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-02-22 10:19:44,737] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /service/training (com.tbentsen.training.resources.TrainingResource)
+
+INFO  [2015-02-22 10:19:44,998] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@2b83d5a{/,null,AVAILABLE}
+INFO  [2015-02-22 10:19:45,002] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-02-22 10:19:45,002] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-02-22 10:19:45,007] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@232a6b09{/admin,null,AVAILABLE}
+INFO  [2015-02-22 10:19:45,014] org.eclipse.jetty.server.ServerConnector: Started hello-world@1ab1f43b{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 10:56:07,637] org.eclipse.jetty.server.ServerConnector: Stopped hello-world@1ab1f43b{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 10:56:07,639] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@232a6b09{/admin,null,UNAVAILABLE}
+INFO  [2015-02-22 10:56:07,639] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@2b83d5a{/,null,UNAVAILABLE}
+INFO  [2015-02-22 10:56:12,939] io.dropwizard.assets.AssetsBundle: Registering AssetBundle with name: assets for path /*
+INFO  [2015-02-22 10:56:13,016] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2015-02-22 10:56:13,084] org.eclipse.jetty.setuid.SetUIDListener: Opened hello-world@19195b2e{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 10:56:13,086] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-02-22 10:56:13,188] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-02-22 10:56:13,259] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /service/training (com.tbentsen.training.resources.TrainingResource)
+
+INFO  [2015-02-22 10:56:13,502] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@dc3e11b{/,null,AVAILABLE}
+INFO  [2015-02-22 10:56:13,506] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-02-22 10:56:13,507] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-02-22 10:56:13,512] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@35d92de8{/admin,null,AVAILABLE}
+INFO  [2015-02-22 10:56:13,521] org.eclipse.jetty.server.ServerConnector: Started hello-world@19195b2e{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 16:10:58,007] org.eclipse.jetty.server.ServerConnector: Stopped hello-world@19195b2e{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 16:10:58,009] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@35d92de8{/admin,null,UNAVAILABLE}
+INFO  [2015-02-22 16:10:58,009] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@dc3e11b{/,null,UNAVAILABLE}
+INFO  [2015-02-22 16:11:02,681] io.dropwizard.assets.AssetsBundle: Registering AssetBundle with name: assets for path /*
+INFO  [2015-02-22 16:11:02,774] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2015-02-22 16:11:02,870] org.eclipse.jetty.setuid.SetUIDListener: Opened hello-world@19195b2e{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 16:11:02,873] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-02-22 16:11:02,996] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-02-22 16:11:03,069] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /service/training (com.tbentsen.training.resources.TrainingResource)
+
+INFO  [2015-02-22 16:11:03,321] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@1365339{/,null,AVAILABLE}
+INFO  [2015-02-22 16:11:03,324] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-02-22 16:11:03,325] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-02-22 16:11:03,329] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@4c7f9986{/admin,null,AVAILABLE}
+INFO  [2015-02-22 16:11:03,340] org.eclipse.jetty.server.ServerConnector: Started hello-world@19195b2e{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 16:27:40,423] org.eclipse.jetty.server.ServerConnector: Stopped hello-world@19195b2e{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 16:27:40,424] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@4c7f9986{/admin,null,UNAVAILABLE}
+INFO  [2015-02-22 16:27:40,425] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@1365339{/,null,UNAVAILABLE}
+INFO  [2015-02-22 21:11:36,149] io.dropwizard.assets.AssetsBundle: Registering AssetBundle with name: assets for path /*
+INFO  [2015-02-22 21:11:36,225] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2015-02-22 21:11:36,294] org.eclipse.jetty.setuid.SetUIDListener: Opened hello-world@3d781b1a{HTTP/1.1}{0.0.0.0:8080}
+INFO  [2015-02-22 21:11:36,296] org.eclipse.jetty.server.Server: jetty-9.0.7.v20131107
+INFO  [2015-02-22 21:11:36,393] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.18.1 02/19/2014 03:28 AM'
+INFO  [2015-02-22 21:11:36,457] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /service/training (com.tbentsen.training.resources.TrainingResource)
+
+INFO  [2015-02-22 21:11:36,705] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@3d176cb9{/,null,AVAILABLE}
+INFO  [2015-02-22 21:11:36,708] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+WARN  [2015-02-22 21:11:36,709] io.dropwizard.setup.AdminEnvironment: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2015-02-22 21:11:36,713] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@2182fb16{/admin,null,AVAILABLE}
+INFO  [2015-02-22 21:11:36,719] org.eclipse.jetty.server.ServerConnector: Started hello-world@3d781b1a{HTTP/1.1}{0.0.0.0:8080}
