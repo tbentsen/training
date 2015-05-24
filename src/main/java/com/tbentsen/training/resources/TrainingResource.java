@@ -1,7 +1,6 @@
 package com.tbentsen.training.resources;
 
 import java.net.URI;
-import java.util.concurrent.atomic.AtomicLong;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -18,8 +17,6 @@ import org.mongojack.WriteResult;
 import com.codahale.metrics.annotation.Timed;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
-import com.tbentsen.training.db.TrainingSessionDao;
-import com.tbentsen.training.db.UserDao;
 import com.tbentsen.training.domain.TrainingSession;
 import com.tbentsen.training.domain.User;
 
