@@ -5,7 +5,6 @@ import io.dropwizard.assets.AssetsBundle;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
-import com.mongodb.DB;
 import com.mongodb.MongoClient;
 import com.tbentsen.training.resources.TrainingResource;
 
@@ -34,7 +33,7 @@ public class TrainingApplication extends Application<TrainingConfiguration> {
 		//environment.jersey().setUrlPattern("/service/*");
 		
         MongoClient mongoClient = new MongoClient();
-        environment.getAdminContext().manage(new MongoClientManager(mongoClient));
+        environment.lifecycle().manage(new MongoClientManager(mongoClient));
 
 		
 		TrainingResource trainingResource = new TrainingResource(mongoClient);
