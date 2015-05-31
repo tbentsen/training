@@ -32,9 +32,12 @@ public class TrainingApplication extends Application<TrainingConfiguration> {
 		// TODO Auto-generated method stub
 		//environment.jersey().disable();
 		//environment.jersey().setUrlPattern("/service/*");
-		MongoClient mongoClient = new MongoClient();
-		DB database = mongoClient.getDB("training");
-		TrainingResource trainingResource = new TrainingResource(database);
+		
+        MongoClient mongoClient = new MongoClient();
+        environment.getAdminContext().manage(new MongoClientManager(mongoClient));
+
+		
+		TrainingResource trainingResource = new TrainingResource(mongoClient);
 		environment.jersey().register(trainingResource);
 	}
 	

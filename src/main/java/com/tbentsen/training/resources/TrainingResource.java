@@ -2,6 +2,9 @@ package com.tbentsen.training.resources;
 
 import java.net.URI;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -11,23 +14,28 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.mongojack.JacksonDBCollection;
-import org.mongojack.WriteResult;
-
 import com.codahale.metrics.annotation.Timed;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
+import com.mongodb.MongoClient;
+
+import org.mongodb.morphia.Datastore;
+import org.mongodb.morphia.Morphia;
+
 import com.tbentsen.training.domain.TrainingSession;
 import com.tbentsen.training.domain.User;
 
 @Path("/training")
 @Produces(MediaType.APPLICATION_JSON)
+
 public class TrainingResource {
-	private final DB database;
 	
-    public TrainingResource(DB database) {
-		super();
-		this.database = database;
+	private static final Logger LOGGER = LoggerFactory.getLogger(TrainingResource.class);
+
+    private Datastore datastore;
+
+    public TrainingResource(final MongoClient mongoClient) {
+    	this.datastore = new Morphia().createDatastore(mongoClient, "training");
 	}
 
 //	private final AtomicLong counter;
@@ -45,15 +53,9 @@ public class TrainingResource {
     @Path("/user/{id}/session")
     @Consumes(MediaType.APPLICATION_JSON)
     public Response saveSession(@PathParam("id") long userId, TrainingSession session) {
+    	LOGGER.debug("saveSession: ");
     	session.setUserId(userId);
-    	
-    	DBCollection sessions = database.getCollection("sessions");
-    	JacksonDBCollection<TrainingSession,String> collection = JacksonDBCollection.wrap(sessions, TrainingSession.class, String.class);
-    	WriteResult<TrainingSession,String> writeResult = collection.insert(session);
-    	if (writeResult == null) {
-    		return Response.serverError().build();
-    	}
-    	session.setId(writeResult.getSavedId());
+    	datastore.save(session);
     	
     	return Response.created(URI.create(session.getId().toString())).entity(session).build();
     }

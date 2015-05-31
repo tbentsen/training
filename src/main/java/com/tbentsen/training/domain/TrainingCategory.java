@@ -1,12 +1,22 @@
 package com.tbentsen.training.domain;
 
-public enum TrainingCategory {
-	RUNNING(1), WALKING(2), CYCLING(3);
-    
-	private int value;
+public class TrainingCategory {
+	
+	private String name;
 
-    private TrainingCategory(int value) {
-            this.value = value;
+    public TrainingCategory() {	}
+
+	public TrainingCategory(String name) {
+            this.name = name;
     }
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+    
 
 }

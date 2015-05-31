@@ -1,12 +1,10 @@
 package com.tbentsen.training.domain;
 
 import org.joda.time.DateTime;
-import org.mongojack.Id;
-import org.mongojack.ObjectId;
+import org.mongodb.morphia.annotations.Id;
 
 public class TrainingSession {
 	
-	@ObjectId
 	@Id
 	String id;
 	
@@ -18,13 +16,22 @@ public class TrainingSession {
 	DateTime start;
 	
 	//@Type(type="org.joda.time.contrib.hibernate.PersistentDateTime")
-	DateTime end;
+	//DateTime end;
+	
+	public TrainingSession() {
+	}
 
 	public TrainingSession(Long userId, TrainingCategory trainingCatagory, DateTime start, DateTime end) {
 		this.userId = userId;
 		this.trainingCategory = trainingCatagory;
 		this.start = start;
-		this.end = end;
+		//this.end = end;
+	}
+	
+	public TrainingSession(Long userId, TrainingCategory trainingCatagory, DateTime start) {
+		this.userId = userId;
+		this.trainingCategory = trainingCatagory;
+		this.start = start;
 	}
 
 	public TrainingCategory getTrainingCatagory() {
@@ -43,13 +50,13 @@ public class TrainingSession {
 		this.start = start;
 	}
 
-	public DateTime getEnd() {
-		return end;
-	}
-
-	public void setEnd(DateTime end) {
-		this.end = end;
-	}
+//	public DateTime getEnd() {
+//		return end;
+//	}
+//
+//	public void setEnd(DateTime end) {
+//		this.end = end;
+//	}
 
 	public TrainingCategory getTrainingCategory() {
 		return trainingCategory;
