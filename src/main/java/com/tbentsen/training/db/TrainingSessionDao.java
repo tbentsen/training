@@ -5,7 +5,6 @@ import java.util.List;
 import org.joda.time.DateTime;
 
 import com.google.common.collect.ImmutableList;
-import com.tbentsen.training.TrainingConfiguration;
 import com.tbentsen.training.domain.TrainingCategory;
 import com.tbentsen.training.domain.TrainingSession;
 

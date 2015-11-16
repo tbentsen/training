@@ -18,10 +18,8 @@ public class TrainingSession {
 	
 	TrainingCategory trainingCategory;
 	
-	//@Type(type="org.joda.time.contrib.hibernate.PersistentDateTime")
 	DateTime start;
 	
-	//@Type(type="org.joda.time.contrib.hibernate.PersistentDateTime")
 	//DateTime end;
 	
 	public TrainingSession() {
