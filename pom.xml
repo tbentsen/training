@@ -7,7 +7,7 @@
 	<name>training</name>
 	<properties>
 		<dropwizard.version>0.8.1</dropwizard.version>
-		<mongodb.version>2.10.1</mongodb.version>
+		<mongodb.version>3.1.1</mongodb.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -28,7 +28,7 @@
 		<dependency>
 		    <groupId>org.mongodb.morphia</groupId>
 		    <artifactId>morphia</artifactId>
-			<version>0.111</version>
+			<version>1.0.1</version>
 		</dependency>
 	</dependencies>
 	<build>
