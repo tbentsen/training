@@ -8,6 +8,7 @@
 	<properties>
 		<dropwizard.version>0.8.1</dropwizard.version>
 		<mongodb.version>3.1.1</mongodb.version>
+		<morphia.version>1.0.1</morphia.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -28,7 +29,7 @@
 		<dependency>
 		    <groupId>org.mongodb.morphia</groupId>
 		    <artifactId>morphia</artifactId>
-			<version>1.0.1</version>
+			<version>${morphia.version}</version>
 		</dependency>
 	</dependencies>
 	<build>

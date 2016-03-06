@@ -1,12 +1,12 @@
 package com.tbentsen.training.domain;
 
-public class User {
+public class UserEntity {
 	
 	Long id;
 	
 	String name;
 
-	public User(Long i, String name) {
+	public UserEntity(Long i, String name) {
 		this.id = i;
 		this.name = name;
 	}

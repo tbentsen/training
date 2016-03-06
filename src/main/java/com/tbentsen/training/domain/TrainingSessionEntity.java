@@ -3,46 +3,42 @@ package com.tbentsen.training.domain;
 import org.joda.time.DateTime;
 import org.mongodb.morphia.annotations.Converters;
 import org.mongodb.morphia.annotations.Entity;
-import org.mongodb.morphia.annotations.Id;
 
 import com.tbentsen.training.util.JodaDateTimeConverter;
 
 @Entity
 @Converters(JodaDateTimeConverter.class)
-public class TrainingSession {
-	
-	@Id
-	String id;
+public class TrainingSessionEntity extends BaseEntity {
 	
 	Long userId;
 	
-	TrainingCategory trainingCategory;
+	TrainingCategoryEntity trainingCategory;
 	
 	DateTime start;
 	
 	//DateTime end;
 	
-	public TrainingSession() {
+	public TrainingSessionEntity() {
 	}
 
-	public TrainingSession(Long userId, TrainingCategory trainingCatagory, DateTime start, DateTime end) {
+	public TrainingSessionEntity(Long userId, TrainingCategoryEntity trainingCatagory, DateTime start, DateTime end) {
 		this.userId = userId;
 		this.trainingCategory = trainingCatagory;
 		this.start = start;
 		//this.end = end;
 	}
 	
-	public TrainingSession(Long userId, TrainingCategory trainingCatagory, DateTime start) {
+	public TrainingSessionEntity(Long userId, TrainingCategoryEntity trainingCatagory, DateTime start) {
 		this.userId = userId;
 		this.trainingCategory = trainingCatagory;
 		this.start = start;
 	}
 
-	public TrainingCategory getTrainingCatagory() {
+	public TrainingCategoryEntity getTrainingCatagory() {
 		return trainingCategory;
 	}
 
-	public void setTrainingCatagory(TrainingCategory trainingCatagory) {
+	public void setTrainingCatagory(TrainingCategoryEntity trainingCatagory) {
 		this.trainingCategory = trainingCatagory;
 	}
 
@@ -62,20 +58,17 @@ public class TrainingSession {
 //		this.end = end;
 //	}
 
-	public TrainingCategory getTrainingCategory() {
+	public TrainingCategoryEntity getTrainingCategory() {
 		return trainingCategory;
 	}
 
-	public void setTrainingCategory(TrainingCategory trainingCategory) {
+	public void setTrainingCategory(TrainingCategoryEntity trainingCategory) {
 		this.trainingCategory = trainingCategory;
 	}
 
+
 	public String getId() {
 		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
 	}
 
 	public Long getUserId() {

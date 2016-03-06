@@ -5,7 +5,10 @@ import io.dropwizard.assets.AssetsBundle;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
+import org.mongodb.morphia.Morphia;
+
 import com.mongodb.MongoClient;
+import com.tbentsen.training.db.TrainingSessionDao;
 import com.tbentsen.training.resources.TrainingResource;
 
 
@@ -34,10 +37,15 @@ public class TrainingApplication extends Application<TrainingConfiguration> {
 		
         MongoClient mongoClient = new MongoClient();
         environment.lifecycle().manage(new MongoClientManager(mongoClient));
+        
+        
+        Morphia morphia = new Morphia();
 
-		
-		TrainingResource trainingResource = new TrainingResource(mongoClient);
+		TrainingSessionDao trainingSessionDao = new TrainingSessionDao(mongoClient, morphia, configuration.getDbName());
+        
+        
+		TrainingResource trainingResource = new TrainingResource(trainingSessionDao);
 		environment.jersey().register(trainingResource);
 	}
-	
+
 }

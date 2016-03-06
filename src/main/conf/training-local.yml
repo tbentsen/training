@@ -25,3 +25,4 @@ logging:
 #rootPath: /service/*  replaced by environment.jersey().setUrlPattern("/service/*");
 
 displayName: training
+dbName: training

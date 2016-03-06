@@ -1,12 +1,12 @@
 package com.tbentsen.training.domain;
 
-public class TrainingCategory {
+public class TrainingCategoryEntity {
 	
 	private String name;
 
-    public TrainingCategory() {	}
+    public TrainingCategoryEntity() {	}
 
-	public TrainingCategory(String name) {
+	public TrainingCategoryEntity(String name) {
             this.name = name;
     }
 
